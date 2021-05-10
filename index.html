@@ -9,6 +9,7 @@
       <title>Astronomy</title>
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" href="css/solar.css">
       <!-- Google Icons -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
    </head>
@@ -25,10 +26,10 @@
 		<!-- Discover Main -->
          <div id="page-home" class="active">
 			<div class="d-grid gap-2">
+					
 			<div>
 				<h2> </h2>
 			</div>
-
 			<div class="card text-white bg-primary" id="discover1">
 			  <div class="card-header">Introduction</div>
 			  <div class="card-body">
@@ -43,11 +44,18 @@
 			  </div>
 			</div>	
 			
+			<div class="card text-white bg-success" id="discover4">
+			  <div class="card-header">Calculate</div>
+			  <div class="card-body">
+				<h5 class="card-title">Your weight in space</h5>
+			  </div>
+			</div>				
+			
 			<div class="card text-white bg-dark" id="discover2">
 			  <img src="img/2.png" class="card-img-top" alt="...">
 			  <div class="card-header">Unsolved problems in astronomy</div>		  
 			</div>			
-			
+			<br>
 			</div>
 			</div>
          <!-- Discover 1 -->
@@ -108,6 +116,45 @@
 			The common modern calendar is based on the Roman calendar. Although originally a lunar calendar, it broke the traditional link of the month to the phases of the Moon and divided the year into twelve almost-equal months, that mostly alternated between thirty and thirty-one days. Julius Caesar instigated calendar reform in 46 BCE and introduced what is now called the Julian calendar, based upon the 365 1⁄4 day year length originally proposed by the 4th century BCE Greek astronomer Callippus. </p>
 			</div>
 		 </div>	
+         <!-- Discover 4 -->
+         <div id="page-discover4" class="inactive">
+			<div class="container">
+			<h2> </h2>
+			
+			<figure class="figure">
+			  <img src="img/11.png" class="figure-img img-fluid rounded" alt="...">
+			  <figcaption class="figure-caption">Weightless</figcaption>
+			</figure>			
+			<h1>Your weight in space</h1>		 
+				<div class="container">
+				<form class="form-group" id="form-group">
+				
+				<label for="planet" class="col-form-label">I want to know my weight in:</label>
+				<select class="form-select" name="planet" id="planet" aria-label="I want to know my weight in">
+					  <option value="Mercury">Mercury</option>
+					  <option value="Venus">Venus</option>
+					  <option value="Mars">Mars</option>
+					  <option value="Jupiter">Jupiter</option>
+					  <option value="Saturn">Saturn</option>
+					  <option value="Uranus">Uranus</option>
+					  <option value="Neptune">Neptune</option>
+				</select>
+				<div class="col-auto">
+				<label for="weight" class="col-form-label">Your weight (pounds):</label>
+				<input type="text" id="weight" class="form-control" aria-describedby="passwordHelpInline">
+				</div>
+				<br> 
+				<button id="show-result" type="button" class="btn btn-primary btn-lg">Count</button>
+				<button id="clear" type="button" class="btn btn-secondary btn-lg">Clear</button>
+				<br><br>
+				</form>
+				  <div class="col-auto">
+					<span id="result" class="form-text">
+					</span>
+				  </div>
+			  </div>	
+			</div>
+		 </div>			 
          <!-- Articles -->
          <div id="page-feed" class="inactive">
 			<div>
@@ -163,6 +210,7 @@
 					<span class="badge bg-warning">Soon</span>
 				  </li>	  
 				</ol>
+				
 			</div>
          </div>
          <!-- Article 1 -->
@@ -179,7 +227,6 @@
 			It is true that gravity decreases with distance, so it is possible to be far away from a planet or star and feel less gravity. But that doesn't account for the weightless feeling that astronauts experience in space. The reason that astronauts feel weightless actually has to do with their position compared to their spaceship. We feel weight on Earth because gravity is pulling us down, while the floor or ground stop us from falling. We are pressed against it. Any ship in orbit around the Earth is falling slowly to Earth. Since the ship and the astronauts are falling at the same speed, the astronauts don't press against anything, so they feel weightless.
 			<br><br>You can feel something very like what the astronauts feel for a moment in a fast-moving elevator going down or in a roller coaster, when you start going down a big hill. You are going down rapidly, but so is the roller coaster or the elevator so for a second you feel weightless.
 			</p>
-
 			</div>
 		 </div>	   
          <!-- Article 2 -->
@@ -298,6 +345,7 @@
 
       <!-- JS needed for this page -->
       <script src="js/main.js"></script>
+	  <script src="js/weight.js"></script>
    </body>
 </html>
 

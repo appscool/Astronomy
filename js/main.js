@@ -5,7 +5,7 @@ var currentSelectorId = "home";
 //Function for getting the button ids
 function getButtons(){
     //List of button ids
-    var list = ["home", "feed", "discover1", "discover2", "discover3", "article1", "article2", "article3", "article4", "article5", "article6"];
+    var list = ["home", "feed", "discover1", "discover2", "discover3", "discover4", "article1", "article2", "article3", "article4", "article5", "article6"];
     return list;
 }
 
